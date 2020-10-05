@@ -15,6 +15,7 @@
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
       integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
@@ -26,28 +27,35 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
   </head>
+  <header>
+    <a href="index.html">
+      <img id="logo" src="삼각봇.png" alt="Logo" width="100" />
+    </a>
+    <nav>
+      <ul class="nev_ul">
+        <li><a href="login.html">LOGIN</a></li>
+        <li id="dropdown_menu">
+          <button
+            class="btn btn-dark dropdown-toggle rounded-circle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <img id="dropdown_img" src="dropdown.svg" width="20px" />
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <body>
     <div class="container-fluid">
-      <header>
-        <a href="index.html">
-          <img id="logo" src="삼각봇.png" alt="Logo" width="100" />
-        </a>
-        <nav>
-          <ul class="nev_ul">
-            <li><a href="login.html">LOGIN</a></li>
-            <li id="dropdown_menu">
-              <button
-                id="dropdown_button"
-                type="button"
-                class="rounded-circle btn btn-dark"
-              >
-                <img id="dropdown_img" src="dropdown.svg" width="20px" />
-              </button>
-            </li>
-          </ul>
-        </nav>
-      </header>
       <div class="content">
         <main>
           <section id="title_section">
@@ -57,6 +65,7 @@
                 id="button_more"
                 class="btn btn-primary rounded-pill"
                 type="button"
+                onclick='position_scroll("#description_section")'
               >
                 more
               </button>
@@ -91,6 +100,17 @@
               <span class="title">더 많은 명령은 삼각봇에게</span>
               <p>`도움말 을 입력해서 더 많은 명령들을 알아보세요</p>
             </item>
+          </section>
+          <section id="use_samgakbot_section">
+            <h2 id="use_title">삼각봇 사용하기</h2>
+            <button
+              id="use_samgakbot_button"
+              type="button"
+              class="rounded-0 btn btn-dark col text-center"
+              onclick="location.href='bot.html'"
+            >
+              more
+            </button>
           </section>
         </main>
       </div>
