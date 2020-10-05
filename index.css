@@ -1,0 +1,163 @@
+body {
+  width: 100%;
+  background-color: #252525;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav_ul {
+  list-style: none;
+}
+header {
+  background-color: #434343;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo {
+  margin-left: 20px;
+  flex-basis: 1000px;
+}
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+header > nav {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 600px;
+  height: 100%;
+}
+header ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+header ul > li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: lighter;
+  height: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+a {
+  color: white;
+  text-decoration-line: none;
+  outline: none;
+}
+a:hover {
+  color: #00aaff;
+  text-decoration-line: none;
+}
+#title_text {
+  text-align: center;
+  margin-top: 400px;
+  font-size: 2rem;
+  font-weight: bolder;
+  transition: font-size 0.3s;
+}
+#title_text:hover {
+  font-size: 2.3rem;
+}
+#button_more {
+  font-size: x-large;
+  font-weight: lighter;
+  width: 120px;
+  height: 50px;
+  transition: all 0.3s;
+}
+#button_more:hover {
+  width: 160px;
+  height: 60px;
+}
+#title_section {
+  height: 500px;
+}
+#scroll {
+  margin: 20px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+#scroll_logo {
+  align-content: center;
+}
+#dropdown_menu:hover {
+  color: #00aaff;
+}
+#dropdown_button {
+  margin-left: 0px;
+  height: 45px;
+}
+#dropdown_img {
+  margin: 0;
+  padding: 0;
+  filter: invert(80%);
+}
+#scroll_logo {
+  filter: invert(100);
+}
+.center {
+  display: block;
+  margin: 0;
+  margin-top: -15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+h2 {
+  font-weight: bold;
+}
+#description_section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.ico {
+  filter: invert(100);
+  height: 90px;
+}
+.title {
+  font-weight: bolder;
+  font-size: x-large;
+  text-align: center;
+}
+img#wather_ico.ico {
+  height: 110px;
+}
+
+#description_section {
+  height: 300px;
+}
+item#wather {
+  padding-top: 52px;
+}
+item#help {
+  padding-top: 42px;
+}
+item {
+  margin: 20px;
+  width: 550px;
+  padding: 10px;
+}
+#help img.ico {
+  height: 85px;
+}

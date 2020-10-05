@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>삼각봇</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header>
+        <a href="index.html">
+          <img id="logo" src="삼각봇.png" alt="Logo" width="100" />
+        </a>
+        <nav>
+          <ul class="nev_ul">
+            <li><a href="login.html">LOGIN</a></li>
+            <li id="dropdown_menu">
+              <button
+                id="dropdown_button"
+                type="button"
+                class="rounded-circle btn btn-dark"
+              >
+                <img id="dropdown_img" src="dropdown.svg" width="20px" />
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="content">
+        <main>
+          <section id="title_section">
+            <p id="title_text">디스코드에서 사용할 수 있는 다기능 삼각봇!</p>
+            <div class="col text-center">
+              <button
+                id="button_more"
+                class="btn btn-primary rounded-pill"
+                type="button"
+              >
+                more
+              </button>
+            </div>
+          </section>
+          <section id="scroll_section">
+            <p id="scroll">스크롤</p>
+            <img id="scroll_logo" src="scroll.svg" class="center" />
+            <br />
+          </section>
+          <section id="description_section">
+            <item id="wather">
+              <img id="wather_ico" class="ico" src="wather.svg" />
+              <br />
+              <span class="title">지역의 날씨 보기</span>
+              <p>
+                `서울 강남구 날씨<br />`(지역)날씨 를 입력하면 삼각봇이 입력한
+                지역의 날씨 정보를 가져와요!
+              </p>
+            </item>
+
+            <item id="virus">
+              <img src="virus.svg" class="ico" />
+              <br />
+              <span class="title">코로나 현황 보기</span>
+              <p>`코로나 를 입력하면 삼각봇이 코로나 현황을 불러와 알려줘요!</p>
+            </item>
+
+            <item id="help">
+              <img src="help.svg" class="ico" />
+              <br />
+              <span class="title">더 많은 명령은 삼각봇에게</span>
+              <p>`도움말 을 입력해서 더 많은 명령들을 알아보세요</p>
+            </item>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
