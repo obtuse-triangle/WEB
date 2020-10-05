@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  padding-top: 120px;
 }
 .nav_ul {
   list-style: none;
@@ -17,6 +18,9 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  margin-top: -131px;
+  z-index: 100;
 }
 
 #logo {
@@ -99,12 +103,13 @@ a:hover {
 #scroll_logo {
   align-content: center;
 }
-#dropdown_menu:hover {
+#dropdownMenuButton:hover {
   color: #00aaff;
 }
-#dropdown_button {
-  margin-left: 0px;
+#dropdownMenuButton {
+  margin-left: -15px;
   height: 45px;
+  background-color: #252525;
 }
 #dropdown_img {
   margin: 0;
@@ -160,4 +165,28 @@ item {
 }
 #help img.ico {
   height: 85px;
+}
+button#dropdownMenuButton.btn.btn-dark.dropdown-toggle.rounded-circle::after {
+  display: none;
+}
+#use_samgakbot_section {
+  margin-top: 100px;
+  padding-top: 60px;
+  background-color: #111111;
+  height: 200px;
+}
+#use_title {
+  text-align: center;
+}
+#use_samgakbot_button {
+  background-color: #111111;
+  border: none;
+  transition: all 0.5s;
+}
+#use_samgakbot_button:hover {
+  color: #00aaff;
+  font-size: x-large;
+}
+#scroll_section {
+  margin-top: 100px;
 }
