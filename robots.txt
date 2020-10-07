@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://a.obtuse.cf/sitemap.xml
